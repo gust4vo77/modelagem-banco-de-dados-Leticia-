@@ -1,0 +1,63 @@
+1- C
+
+2- D
+
+3- E
+
+4 A-  COMPANHIA(codigo: inteiro, nome: texto)
+
+VOO(numero: inteiro, origem: texto, destino: texto, data: data, companhia: inteiro)
+
+companhia referencia COMPANHIA(codigo)
+
+PASSAGEIRO(cpf: texto, nome: texto)
+
+RESERVA(codigo_reserva: inteiro, cpf: texto, numero_voo: inteiro)
+
+cpf referencia PASSAGEIRO(cpf)
+
+numero_voo referencia VOO(numero)
+
+
+
+B-  CLIENTE(cpf: texto, nome: texto)
+
+PRODUTO(codigo: inteiro, descricao: texto, preco: decimal)
+
+COMPRA(codigo: inteiro, data: data, cpf_cliente: texto)
+
+cpf_cliente referencia CLIENTE(cpf)
+
+ITEM_COMPRA(codigo_compra: inteiro, codigo_produto: inteiro, quantidade: inteiro)
+
+codigo_compra referencia COMPRA(codigo)
+
+codigo_produto referencia PRODUTO(codigo)
+
+
+
+C- ALUNO(matricula: inteiro, nome: texto)
+
+DISCIPLINA(codigo: inteiro, nome: texto)
+
+PROFESSOR(cpf: texto, nome: texto)
+
+TURMA(codigo: inteiro, codigo_disciplina: inteiro, cpf_professor: texto)
+
+codigo_disciplina referencia DISCIPLINA(codigo)
+
+cpf_professor referencia PROFESSOR(cpf)
+
+MATRICULA(matricula_aluno: inteiro, codigo_turma: inteiro)
+
+matricula_aluno referencia ALUNO(matricula)
+
+codigo_turma referencia TURMA(codigo)
+
+
+
+gustavo almeida
+
+gustavo carlos
+
+deivisson carlos
